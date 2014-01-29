@@ -1,0 +1,23 @@
+galaxy_info:
+  author: "Marten Klitzke"
+  description: A Basic Role to install Elasticsearch
+  license: MIT
+  min_ansible_version: 1.4
+  version: 0.1
+  platforms:
+    - name: Debian
+      versions:
+      - etch
+      - lenny
+      - squeeze
+      - wheezy
+    - name: Ubuntu
+      versions:
+      - precise
+      - quantal
+      - raring
+      - saucy
+  categories:
+   - web
+dependencies: []
+
