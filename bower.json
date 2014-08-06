@@ -1,0 +1,12 @@
+{
+  "name": "Ansible Elasticsearch",
+  "version": "0.0.1",
+  "homepage": "git@github.com:mortik/ansible-elasticsearch-role.git",
+  "authors": [
+    "Marten Klitzke"
+  ],
+  "description": "A role that installs Elasticsearch",
+  "license": "MIT",
+  "dependencies": {
+  }
+}

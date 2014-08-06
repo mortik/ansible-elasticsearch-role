@@ -3,7 +3,6 @@ galaxy_info:
   description: A Basic Role to install Elasticsearch
   license: MIT
   min_ansible_version: 1.4
-  version: 0.1
   platforms:
     - name: Debian
       versions:
