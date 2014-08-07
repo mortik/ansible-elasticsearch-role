@@ -2,17 +2,14 @@
 - apt_key:
     state: present
     url: http://packages.elasticsearch.org/GPG-KEY-elasticsearch
-  tags: elasticsearch
 
 - apt_repository:
     repo: "deb http://packages.elasticsearch.org/elasticsearch/{{ elasticsearch_version | regex_replace('(\\.\\d+)$', '') }}/debian stable main "
     state: present
     update_cache: yes
-  tags: elasticsearch
 
 - apt:
     pkg: "elasticsearch={{ elasticsearch_version }}"
-  tags: elasticsearch
 
 - name: setup elasticsearch config
   template:
@@ -23,9 +20,7 @@
     mode: 0644
   notify:
     - restart elasticsearch
-  tags: elasticsearch
 
 - service:
     name: elasticsearch
     state: started
-  tags: elasticsearch
