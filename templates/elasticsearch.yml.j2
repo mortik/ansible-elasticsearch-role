@@ -1,6 +1,8 @@
 cluster:
-  name: {{ elasticsearch_clustername }}
+  name: {{ elasticsearch_cluster_name }}
+node:
+  name: {{ elasticsearch_node_name }}
 script:
   disable_dynamic: true
 network:
-  host: 127.0.0.1
+  host: {{ elasticsearch_network_host }}
