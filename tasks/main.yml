@@ -21,6 +21,16 @@
   notify:
     - restart elasticsearch
 
+- name: setup elasticsearch defaults
+  template:
+    src: elasticsearch.defaults.j2
+    dest: "/etc/default/elasticsearch"
+    owner: root
+    group: root
+    mode: 0644
+  notify:
+    - restart elasticsearch
+
 - service:
     name: elasticsearch
     state: started
